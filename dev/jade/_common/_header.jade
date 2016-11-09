@@ -1,0 +1,13 @@
+.header
+  .header__container
+    .header__logo
+      img.header__logo_img(src='/img/logo.jpg', alt='Моя фотография')
+    .header__text
+      .header__text_name Адашкевич Павел Александрович
+      .header__text_email apavlin@yandex.ru
+    //- .socials
+      ul.socials__list
+        - var socials = ['gh', 'sk', 'vk']
+        each item in socials
+          li.socials__item
+            a(href="#" class="socials__link socials__link_#{item}").

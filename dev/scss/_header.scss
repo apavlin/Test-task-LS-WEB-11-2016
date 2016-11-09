@@ -1,0 +1,61 @@
+@import "sprite";
+
+.header {
+	background: #8cc34b;
+	box-shadow: 0 0 22px rgba(0,0,0,0.5);
+
+	&__container{
+		padding: 14px 28px;
+		width: 1200px;
+		display: inline-flex;
+		align-items: center;
+  	justify-content: center;
+	}
+	&__text{
+		display: flex;
+	  flex-direction: column;
+		color: #ffffff;
+			&_name {
+				font-size: 21px;
+				margin-bottom: 3px;
+			}
+			&_email {
+				font-size: 14px;
+			}
+	}
+	&__logo {
+  	display: inline-block;
+  	width: 58px;
+	  height: 58px;
+	  margin-right: 14px;
+	  border-radius: 50%;
+	  overflow: hidden;
+	  border: 2px solid #ffffff;
+		  &_img {
+		  	width: 100%;
+			}
+	}
+}
+
+.socials {
+
+	&__item, &__link {
+		display: inline-block;
+
+	}
+	&__link {
+		&_fb{
+			@include sprite($fb);
+		}
+	}
+	&__link {
+		&_tw{
+			@include sprite($tw)
+		}
+	}
+	&__link {
+		&_vk{
+			@include sprite($vk)
+		}
+	}
+}

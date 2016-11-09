@@ -1,0 +1,20 @@
+.wrapper:after {
+    content: "";
+    display: block;
+    height: 80px;
+  }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  height: 80px;
+  margin-top: -80px;
+  background: #212121;
+    &__content {
+      width: 590px;
+      text-align: center;
+      top: 50%;
+    }
+}

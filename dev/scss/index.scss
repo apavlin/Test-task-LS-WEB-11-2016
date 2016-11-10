@@ -1,0 +1,46 @@
+.aboutStudent {
+
+
+  &__header {
+    font-family: 'fira_sansmedium';
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px
+  }
+  &__subHeader {
+    font-family: 'fira_sanslight';
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 40px
+  }
+  &__block{
+    display: inline-block;
+    vertical-align: top;
+    width: 460px;
+
+    &_header{
+      font-family: 'fira_sansregular';
+      font-size: 21px;
+      margin-bottom: 10px;
+      float: left;
+    }
+    &_icon {
+      display: inline-block;
+      padding-right: 20px;
+      float: left;
+    }
+    &_text {
+      width: 300px;
+      float: right;
+    }
+    &_link {
+      display: inline-block;
+      padding-right: 5px;
+    }
+    &_aboutMe{
+      padding-right: 20px;
+
+    }
+  }
+
+}

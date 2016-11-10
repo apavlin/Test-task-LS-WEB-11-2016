@@ -3,11 +3,13 @@
     .header__logo
       img.header__logo_img(src='/img/logo.jpg', alt='Моя фотография')
     .header__text
-      .header__text_name Адашкевич Павел Александрович
-      .header__text_email apavlin@yandex.ru
-    //- .socials
+      h1.header__text_name Адашкевич Павел Александрович
+      a.header__text_email(href='mailto:apavlin@yandex.ru') apavlin@yandex.ru
+    .header__socials
       ul.socials__list
-        - var socials = ['gh', 'sk', 'vk']
-        each item in socials
-          li.socials__item
-            a(href="#" class="socials__link socials__link_#{item}").
+        li.socials__item
+          a.fa.fa-github(href="https://github.com/apavlin", aria-hidden="true" target="_blank")
+        li.socials__item
+          a.fa.fa-skype(href="skype:pavlin_bird_of_happyness", aria-hidden="true" target="_blank")
+        li.socials__item
+          a.fa.fa-vk(href="http://vk.com/apavlin", aria-hidden="true" target="_blank")

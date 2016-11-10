@@ -1,5 +1,21 @@
 extends ../main
 
 block content
-	.article-inner
-		//- |  Контент главной страницы
+  .container
+    .aboutStudent
+      h2.aboutStudent__header О будущем ученике
+      .aboutStudent__subHeader Ребятам из Loftschool будет полезно узнать немного обо мне
+        //- .aboutStudent__container
+      .aboutStudent__block.aboutStudent__block_aboutMe
+        img.aboutStudent__block_icon(src='/img/hello.svg', alt='AboutMe')
+        .aboutStudent__block_header Немного обо мне
+        .aboutStudent__block_text Я живу в Барселоне (Испания). Мне 34 года. Высшее образование - закончил РГТЭУ, специальность "Менеджмент". Опыт в разработке 1 год. Был рядом с женой, которая проходила у вас этот же курс в начале 2016, немного научился верстать. Пока есть только несколько сайтов, которыми могу похвастаться:
+          a.aboutStudent__block_link(href="http://bypablo.ru", target="_blank") www.bypablo.ru
+          a.aboutStudent__block_link(href="http://yogi42.ru", target="_blank") www.yogi42.ru
+          a.aboutStudent__block_link(href="http://pilmenis.com", target="_blank") www.pilmenis.com
+
+      .aboutStudent__block.aboutStudent__block_experience
+        img.aboutStudent__block_icon(src='/img/experience.svg', alt='AboutMe')
+        .aboutStudent__block_header Мой опыт в разработке
+        .aboutStudent__block_text Проходил какие-то курсы в HTML-академии. Потом был ваш курс, где я узнал прелести gulp, удобство sass, крутизну jade, необходимость git и многие другие полезности, которые вы подали, не то чтобы на ложечке, но в той самой нужной форме, благодаря которой хорошо запонилось ;-)
+

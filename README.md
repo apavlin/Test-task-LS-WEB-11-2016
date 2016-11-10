@@ -1,10 +1,9 @@
-> Instructions
 
-This is the template for fast start of new project. 
+Это тестовое задание для участия в "Продвинутый курс по веб-разработке" от LoftSchool. Поток 11.2016
 
-To install this project:
+Для установки выполните шаги:
 
-1. git clone https://github.com/apavlin/template-2 nameOfProject
-2. cd nameOfProject
+1. git clone https://github.com/apavlin/Test-task-LS-WEB-11-2016 AdashkevichTestTask
+2. cd AdashkevichTestTask
 3. remove .git folder from project
-3. npm i; gulp# Test-task-LS-WEB-11-2016
+4. npm i; gulp build

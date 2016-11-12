@@ -1,22 +1,27 @@
-.aboutStudent {
-
-
+.article {
   &__header {
     font-family: 'fira_sansmedium';
     font-size: 42px;
     text-align: center;
-    margin-bottom: 20px
+    margin: 0;
+    padding-top: 55px;
+    line-height: 55px;
   }
   &__subHeader {
     font-family: 'fira_sanslight';
     font-size: 21px;
     text-align: center;
-    margin-bottom: 40px
+    padding-bottom: 30px
   }
+}
+
+.aboutStudent {
+
   &__block{
     display: inline-block;
     vertical-align: top;
     width: 460px;
+    margin-bottom: 75px;
 
     &_header{
       font-family: 'fira_sansregular';
@@ -34,7 +39,7 @@
       float: right;
     }
     &_link {
-      display: inline-block;
+      // display: inline-block;
       padding-right: 5px;
     }
     &_aboutMe{
@@ -44,3 +49,71 @@
   }
 
 }
+
+.courses {
+  background: url('../img/gplaypattern.png');
+  padding-bottom: 70px;
+
+  &__box {
+    margin: 0 -10px;
+  }
+}
+
+
+.course {
+  vertical-align: top;
+  width:300px;
+  background: #ffffff;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 10px;
+
+  &:hover {
+    .course__title {
+      color: #8cc34b;
+    }
+    .course__picture {
+      border-bottom: 8px solid #8cc34b;
+    }
+  }
+
+  &__picture {
+    border-bottom: 8px solid #ffffff;
+  }
+
+  &__description{
+    padding: 20px;
+  }
+
+  &__title {
+    font-family: 'fira_sansregular';
+    font-size: 21px;
+    padding-bottom: 15px;
+  }
+  &__text {
+    font-family: 'fira_sanslight';
+    line-height: 22px;
+    padding-bottom: 15px;
+  }
+  &__time {
+    &_clock {
+      font-size: 14px;
+      color: #b6b6b6;
+    }
+    &_text {
+      font-size: 14px;
+      color: #b6b6b6;
+      display: inline;
+    }
+  }
+  &__looked {
+    font-size: 18px;
+    background: #f6f7f2;
+    padding: 20px;
+    &_text {
+      display: inline;
+    }
+  }
+
+}
+

@@ -1,21 +1,95 @@
 extends ../main
 
 block content
-  .container
-    .aboutStudent
-      h2.aboutStudent__header О будущем ученике
-      .aboutStudent__subHeader Ребятам из Loftschool будет полезно узнать немного обо мне
-        //- .aboutStudent__container
-      .aboutStudent__block.aboutStudent__block_aboutMe
+  .article.aboutStudent
+    .container
+      h2.article__header О будущем ученике
+      .article__subHeader Ребятам из Loftschool будет полезно узнать немного обо мне
+      .aboutStudent__block
         img.aboutStudent__block_icon(src='/img/hello.svg', alt='AboutMe')
         .aboutStudent__block_header Немного обо мне
-        .aboutStudent__block_text Я живу в Барселоне (Испания). Мне 34 года. Высшее образование - закончил РГТЭУ, специальность "Менеджмент". Опыт в разработке 1 год. Был рядом с женой, которая проходила у вас этот же курс в начале 2016, немного научился верстать. Пока есть только несколько сайтов, которыми могу похвастаться:
-          a.aboutStudent__block_link(href="http://bypablo.ru", target="_blank") www.bypablo.ru
-          a.aboutStudent__block_link(href="http://yogi42.ru", target="_blank") www.yogi42.ru
-          a.aboutStudent__block_link(href="http://pilmenis.com", target="_blank") www.pilmenis.com
+        .aboutStudent__block_text Я живу в Барселоне (Испания). Мне 34 года. Высшее образование - закончил РГТЭУ, специальность "Менеджмент". Опыт в разработке 1 год. Подглядывал за женой, когда она проходила у вас этот же курс в начале 2016, немного научился верстать. Пока сделал несколько сайтов, но планирую верстать круче Сабанцева ;)
+          a.aboutStudent__block_link(href="http://bypablo.ru", target="_blank")   bypablo.ru,
+          a.aboutStudent__block_link(href="http://yogi42.ru", target="_blank") yogi42.ru,
+          a.aboutStudent__block_link(href="http://pilmenis.com", target="_blank") pilmenis.com
 
-      .aboutStudent__block.aboutStudent__block_experience
+      .aboutStudent__block
         img.aboutStudent__block_icon(src='/img/experience.svg', alt='AboutMe')
         .aboutStudent__block_header Мой опыт в разработке
-        .aboutStudent__block_text Проходил какие-то курсы в HTML-академии. Потом был ваш курс, где я узнал прелести gulp, удобство sass, крутизну jade, необходимость git и многие другие полезности, которые вы подали, не то чтобы на ложечке, но в той самой нужной форме, благодаря которой хорошо запонилось ;-)
+        .aboutStudent__block_text Проходил какие-то курсы в HTML-академии. Потом был ваш курс, где я узнал прелести gulp, удобство sass, крутизну jade, необходимость git и многие другие полезности, которые вы дали, не то чтобы на ложечке, но в той самой нужной форме, благодаря которой, хорошо запонилось ;-)
+
+  .article.courses
+    .container
+      h2.article__header Курсы на loftblog
+      .article__subHeader которые мне помогут в выполнении этого задания
+
+      .courses__box
+        .course
+          img.course__picture(src='/img/js.png', alt='AboutMe')
+          .course__description
+            .course__title Основы JavaScript
+            .course__text Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+            .course__time
+              .course__time_clock.fa.fa-clock-o(aria-hidden="true")
+              .course__time_text 24 урока (6 часов 46 минут)
+          .course__looked
+              input(type="checkbox").course__looked_checkbox
+              .course__looked_text Посмотрел
+        .course
+          img.course__picture(src='/img/jq.png', alt='AboutMe')
+          .course__description
+            .course__title Основы JQUERY
+            .course__text Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+            .course__time
+              .course__time_clock.fa.fa-clock-o(aria-hidden="true")
+              .course__time_text 11 уроков (2 часа 6 минут)
+          .course__looked
+              input(type="checkbox").course__looked_checkbox
+              .course__looked_text Посмотрел
+
+        .course
+          img.course__picture(src='/img/basic.png', alt='AboutMe')
+          .course__description
+            .course__title Базовые элементы страницы
+            .course__text Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
+            .course__time
+              .course__time_clock.fa.fa-clock-o(aria-hidden="true")
+              .course__time_text 9 уроков (2 часа 7 минут)
+          .course__looked
+              input(type="checkbox").course__looked_checkbox
+              .course__looked_text Посмотрел
+        .course
+          img.course__picture(src='/img/adapt.png', alt='AboutMe')
+          .course__description
+            .course__title Создание адаптивных сайтов
+            .course__text В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.
+            .course__time
+              .course__time_clock.fa.fa-clock-o(aria-hidden="true")
+              .course__time_text 7 уроков (2 часа 11 минут)
+          .course__looked
+              input(type="checkbox").course__looked_checkbox
+              .course__looked_text Посмотрел
+        .course
+          img.course__picture(src='/img/button.png', alt='AboutMe')
+          .course__description
+            .course__title Верстка адаптивной css галереи
+            .course__text В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.
+            .course__time
+              .course__time_clock.fa.fa-clock-o(aria-hidden="true")
+              .course__time_text 6 уроков (1 час 9 минут)
+          .course__looked
+              input(type="checkbox").course__looked_checkbox
+              .course__looked_text Посмотрел
+
+        .course
+          img.course__picture(src='/img/cssgalery.png', alt='AboutMe')
+          .course__description
+            .course__title Верстка адаптивной css галереи
+            .course__text В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.
+            .course__time
+              .course__time_clock.fa.fa-clock-o(aria-hidden="true")
+              .course__time_text  4 урока (50 минут)
+          .course__looked
+              input(type="checkbox").course__looked_checkbox
+              .course__looked_text Посмотрел
 

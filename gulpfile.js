@@ -27,7 +27,7 @@ var paths = {
 
     scss: {
         location: [
-            'dev/scss/**/*.scss'
+            'dev/scss/*.*'
         ],
         destination: 'prod/css'
     },
@@ -58,9 +58,9 @@ gulp.task('sass-compile', function() {
     .pipe(plumber({errorHandler: notify.onError("Sass: <%= error.message %>")}))
 		.pipe(sourcemaps.init())
 		.pipe(sass.sync().on('error', sass.logError))
-		.pipe(sass({outputStyle: 'expanded'}))
+		// .pipe(sass({outputStyle: 'expanded'}))
 		.pipe(autoprefixer(['> 5%', 'last 5 versions', 'IE 9']))
-		.pipe(concat("main.min.css"))
+		// .pipe(concat("main.min.css"))
 		.pipe(sourcemaps.write())
     .pipe(browserSync.stream())
 		.pipe(gulp.dest(paths.scss.destination));
@@ -74,7 +74,7 @@ gulp.task('concat-js', function() {
     .pipe(eslint.format())
     .pipe(sourcemaps.init())
     // .pipe(uglify())
-    .pipe(concat('main.min.js'))
+    // .pipe(concat('main.min.js'))
     .pipe(rigger())
   	.pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.js.destination));

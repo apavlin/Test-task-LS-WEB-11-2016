@@ -1,10 +1,10 @@
-//= ../../bower_components/jquery/dist/jquery.min.js
+
 
 $(document).ready(function() {
   // Выводит блок с надписью и убирает заголовки со страницы
 var taskComleted = function() {
   $('.taskComleted').css('display', 'block');
-  $('.courses .article__header, .article__subHeader').css('display', 'none');
+  $('.courses .article__header, .courses .article__subHeader').css('display', 'none');
 }
 
 var arrCourses = [];
@@ -12,7 +12,7 @@ var arrCourses = [];
 var hiding = function() {
   var trigger = $('.course__looked_text');
     trigger.click(function() {
-      $(this).children('.course__looked_checkbox').css('background-image', 'url(/img/checkedbox.png');
+      $(this).children('.course__looked_checkbox').css('background-image', 'url(img/checkedbox.png');
       $(this).parent().prev().css({
         'background':'#edf5e3',
         'color': '#a4ac9b',
